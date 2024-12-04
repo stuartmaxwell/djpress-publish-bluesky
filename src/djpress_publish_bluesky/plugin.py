@@ -70,6 +70,8 @@ class Plugin(DJPressPlugin):
         data["published_posts"] = published_posts
         self.save_data(data)
 
+        return post
+
 
 def bsky_login_session(pds_url: str, handle: str, password: str) -> dict:
     resp = httpx.post(
