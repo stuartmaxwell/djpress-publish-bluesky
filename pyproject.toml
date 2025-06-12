@@ -1,11 +1,11 @@
 [project]
 name = "djpress-publish-bluesky"
-version = "1.0.1"
+version = "1.1.0"
 description = "A plugin for DJ Press that publishes new posts to Bluesky."
 readme = "README.md"
 authors = [{ name = "Stuart Maxwell", email = "stuart@amanzi.nz" }]
 requires-python = ">=3.10"
-dependencies = ["djpress>=0.14.1", "httpx>=0.28.0"]
+dependencies = ["djpress>=0.20", "httpx>=0.28.0"]
 
 [dependency-groups]
 dev = ["bumpver>=2024.1130"]
@@ -21,7 +21,7 @@ build-backend = "hatchling.build"
 line-length = 120
 
 [tool.bumpver]
-current_version = "1.0.1"
+current_version = "1.1.0"
 version_pattern = "MAJOR.MINOR.PATCH"
 commit_message = "👍 bump version {old_version} -> {new_version}"
 commit = true
